@@ -9,4 +9,5 @@ cc_flatbuffers_compile(
 cc_binary(
     name = "sample_binary",
     srcs = ["sample_binary.cpp"],
+    deps = ["//:monster_fbs", "@flatbuffers//:flatbuffers"]
 )
